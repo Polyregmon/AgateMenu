@@ -1,0 +1,358 @@
+@font-face {
+    font-family: 'DiodrumArabic';
+    src:
+            url('fonts/DiodrumArabic-Medium.eot'), /* IE9 Compat Modes */
+            url('fonts/DiodrumArabic-Medium.woff') format('woff'), /* Modern Browsers */
+            url('fonts/DiodrumArabic-Medium.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+.scroll {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+html {
+    font-family: 'DiodrumArabic';
+    background: url("3a83d14ebf6939dbdc1f155087c7be71.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#main img{
+    height: 25%;
+    padding: 30px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.MenuTitle{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin-top: -20%;
+}
+.menu_button{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: max-content;
+    padding: 10px;
+}
+ul{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    width: max-content;
+}
+li{
+    float: left;
+    background-color: white;
+    border-radius: 50px;
+    margin: 10px 10px 10px 10px;
+}
+#insta svg{
+    width: 45px;
+    height: 32px;
+    margin-top: 15%;
+}
+
+#insta svg.inview{
+    width: 55px;
+    height: 42px;
+    margin-top: 10%;
+}
+#loc svg{
+    width: 45px;
+    height: 32px;
+    margin-top: 15%;
+}
+
+#loc svg.inview{
+    width: 55px;
+    height: 42px;
+    margin-top: 10%;
+}
+#phon svg{
+    width: 45px;
+    height: 32px;
+    margin-top: 15%;
+
+}
+
+#phon svg.inview{
+    width: 55px;
+    height: 42px;
+    margin-top: 10%;
+}
+
+
+#instagram {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    color: black;
+    background-color: white;
+    font-size: 17px;
+    font-weight: bold;
+    width: 40%;
+    padding-bottom: 0;
+    border-radius: 10px;
+}
+#location {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: none;
+    color: black;
+    background-color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 0;
+    border-radius: 10px;
+}
+#phone {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: none;
+    color: black;
+    background-color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 0%;
+    width: 40%;
+    border-radius: 10px;
+}
+#body{
+    display: none;
+}
+div#menu {
+    height: 100%;
+    width: 27%;
+    position: fixed;
+    left: 0;
+    z-index: 9;
+    overflow-x: hidden;
+    opacity: 80%;
+    text-align: center;
+}
+a.menu_item{
+    padding: 0 8px 6px 16px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    width: 60%;
+    margin: auto;
+    z-index: 1000;
+
+
+}
+
+a.menu_item h4 {
+    margin: auto;
+    font-size: 10px;
+
+
+}
+#back{
+    margin-top: 35%;
+    margin-bottom: 20%;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+a.menu_item.active {
+    display: inline-block;
+    border-radius: 5px;
+    transform: scale(1);
+    background-color: darkred;
+    margin-left: 10%;
+}
+a.menu_item.active svg {
+    margin-left: -18%;
+}
+
+a.menu_item.active h4 {
+    margin-left: -17%;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    row-gap: 10px;
+    padding: 10px;
+    position: relative;
+    margin-top: -10px;
+}
+.grid-container1 {
+    row-gap: 10px;
+    padding: 10px;
+}
+
+.grid-item{
+    margin: 0 0-30px 20px;
+    width: 90%;
+    padding: 10px;
+}
+
+.grid-item h4{
+    direction: rtl;
+    font-size: 15px;
+    margin: auto;
+    color: black;
+}
+.menu_item_card img{
+    width: 85%;
+    min-height: 160px ;
+    padding: 7% 7% 7% 7%;
+    border-radius: 22px;
+
+
+}
+.menu_item_card {
+    background-color: #cecbcb;
+    opacity: 100%;
+    margin: 5px 5px 18px 5px;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgb(38, 38, 38);
+    transition: 0.3s;
+}
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+.item_price{
+    font-size: 13px;
+    padding: 5px;
+    padding-top: 20px;
+    color: black;
+    font-weight: bolder;
+}
+.menu_item_card p{
+    padding: 5px;
+    direction: rtl;
+    font-size: 11px;
+    margin: 0;
+    color: black;
+    font-weight: bolder;
+}
+.catbox{
+    background-color: darkred;
+    width: 97%;
+    height: 60px;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.catbox h2{
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding-top: 3%;
+    font-size: 14px;
+}
+@media only screen and (min-width: 340px) {
+    a.menu_item.active svg {
+        margin-left: -16%;
+    }
+
+}
+@media only screen and (min-width: 400px) {
+    a.menu_item.active svg {
+        margin-left: -13%;
+    }
+
+    a.menu_item svg {
+        margin-left: 5%;
+    }
+}
+
+a.menu_item svg {
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
